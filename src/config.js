@@ -3,7 +3,7 @@ module.exports = {
 	"server": {
 		"yasguiAssets": path.resolve(__dirname, '..', 'node_modules/yasgui/dist'),
 		"port": 4545,
-		"shortUrlBasename": "http://yasgui.org/short/",
+		"shortUrlBasename": "http://localhost:4545/short/",
 		"db" : {
 			"engine": "tingodb",
 			"mongodb":{
