@@ -13,8 +13,24 @@
  <script src="dist/yasgui.min.js"></script>
 <script type="text/javascript">
   //want to change the config? use the config file in the ./server directory (this gets automatically inserted below)
-  var config = {"api":{"corsProxy":"/proxy/","urlShortener":"/shorten"}};
-	var yasgui = YASGUI(document.getElementById("yasgui"), config);
+  var config = {
+    "api":{
+        "corsProxy":"/proxy/",
+        "urlShortener":"/shorten"
+    },
+    "endpoint":"http://blazegraph.pre.csuc.cat/sparql",
+    "catalogueEndpoints":[
+        {
+            "endpoint":"http://blazegraph.pre.csuc.cat/sparql",
+            "title":"default namesapce: 'kb'"
+        },
+        {
+            "endpoint":"http://blazegraph.pre.csuc.cat/namespace/echoes/sparql",
+            "title":"echoes namespace"
+        }
+    ]
+};
+  var yasgui = YASGUI(document.getElementById("yasgui"), config);  
 </script>
   </body>
 </html>
