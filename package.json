@@ -71,7 +71,7 @@
     "shortid": "^2.2.2",
     "sifter": "^0.5.2",
     "stream-browserify": "^2.0.1",
-    "tingodb": "^0.5.1",
+    "tingodb": "^0.6.1",
     "underscore": "^1.7.0",
     "valid-url": "^1.0.9",
     "yasgui": "^2.6.14"
